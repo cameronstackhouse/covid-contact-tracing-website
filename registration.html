@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.heading
+		{
+			background-color: rgb(173,185,202);
+			padding: 15px 15px 15px 15px;
+		}
+		.heading h1
+		{
+			font-family: Arial;
+			size: 40px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.bg-image
+		{
+			padding: 20em;
+			background-image: url("img/watermark.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 800px, 800px;
+			z-index: -1;
+		}
+		.input_form{
+			position: absolute;
+			text-align: center;
+			margin: auto auto;
+			display: block;
+			top: 40%;
+			left: 42%;
+		}
+		.input_form input[type=text], input[type=password]
+		{
+			width: auto;
+			padding: 12px 60px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		.input_form input[class=button]
+		{
+			width: auto;
+			padding: 15px 110px;
+			font-size: 12px;
+			margin-top: 5px;
+			display: inline-block;
+			border-radius: 10px;
+		}
+		.input_form img[src="img/watermark.png"]{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: -1;
+			opacity: 0.5;
+			width: 800px;
+			height: auto;
+			margin-top: -300px;
+			margin-left: -400px;
+		}
+	</style>
+</head>
+<body>
+	<div class="heading">
+		<h1>COVID-19 Contact Tracing</h1>
+	</div>
+
+	<div class="input_form">
+		<img src="img/watermark.png" alt="Watermark">
+		<form method="POST" action="registration.php">
+			<input type="text" name="firstname" placeholder="Name" required><br>
+			<input type="text" name="surname" placeholder="Surname"><br>
+			<input type="text" name="username" placeholder="Username" required><br>
+			<input type="password" name="password" placeholder="Password" required minlength="8"><br>
+			<input type="submit" name="register" class="button">
+		</form>
+	</div>
+</body>
+</html>

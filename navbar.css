@@ -1,0 +1,64 @@
+.heading{
+	height: 50px;
+	background-color: rgb(173, 185, 202);
+	margin-left: 160px;
+}
+.heading h1{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 40px;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.navbar{
+	height: 100%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top:0;
+	left: 0;
+	background-color: rgb(173, 185, 202);
+	overflow-x: hidden;
+	padding-top: 75px;
+}
+
+p{
+	font-family: "Times New Roman";
+	font-size: 20px;
+}
+
+.logout .navbar 
+	{
+		vertical-align: bottom;
+	}
+
+.navbar .selected{
+	background-color: rgb(132,151,176);
+}
+
+.navbar a{
+	text-align: center;
+	padding: 6px, 8px, 6px, 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: black;
+	display: block;
+	margin-top: 10px;
+}
+
+.navbar a:hover{
+	background-color: rgb(132,151,176);
+}
+.main img[src="img/watermark.png"]{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: -1;
+	opacity: 0.3;
+	width: 800px;
+	height: auto;
+	margin-top: -400px;
+	margin-left: -400px;
+}
